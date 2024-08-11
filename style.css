@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #F0F0F0 ;
+}
+.icon{
+    display: flex;
+}
+.icon p{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.menu{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+}
+ul{
+    display: flex;
+    gap: 1rem;
+}
+li{
+    list-style: none;
+    padding-top: 12px;
+}
+a{
+    text-decoration: none;
+    color:#000000;
+    font-size: 20px;
+    font-weight: 900;
+}
+.search{
+    display: flex;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 2px;
+}
+input{
+    border-radius: 2rem;
+    padding: 5px 30px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+.search .serc{
+    background-color: gray;
+    border-radius: 1rem;
+    padding: 10px;
+}
+.search i{
+    margin-top: 20px;
+}
+nav i{
+    font-size:40px;
+    text-align: center;
+}
+.hero img{
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+.products{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+.product--content{
+    padding: 0.2rem 0;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+.product img{
+    width: 50%;
+    justify-self: center;
+}
+.product--title,
+.product-price-container,
+.product--description,
+.product--category{
+    padding: 0.5rem 0;
+}
+
+.footer{
+    background-color: #F0F0F0;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 10px;
+}
+.footer input{
+    border-radius: 5px;
+    padding: 10px;
+}
+.care{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+.gt-u{
+    width: 100%;
+}
+.sub{
+    width: 100%;
+}
+footer{
+    background-color: #F0F0F0;
+    color: black;
+    border-top: 1px solid black;
+}
+.sub h6{
+    text-align: right;
+}
+.compl{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+.claim,
+.term{
+    text-align: right;
+}

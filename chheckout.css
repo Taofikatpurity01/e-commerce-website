@@ -1,0 +1,32 @@
+.addr{
+    display: flex;
+    justify-content: space-between;
+
+}
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+    margin: auto;
+}
+form input{
+    border-radius: 5px;
+    padding: 10px;
+    border: 0.5px solid rgba(128, 128, 128, 0.56);
+}
+.addr h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.su--mary{
+    padding: 40px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* align-self: center; */
+    /* width: 90%; */
+    margin:30px auto;
+}
