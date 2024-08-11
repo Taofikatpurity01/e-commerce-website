@@ -32,7 +32,7 @@
         <div class="icon">
 
             <img src="img/icon.png" alt="" class="logo">
-            <p>e-com</p>
+            <p>shops</p>
         </div>
         <div class="menu">
             <ul>
@@ -62,24 +62,18 @@
             <div>
 
                 <i class=" cart fa-solid fa-cart-shopping"></i>
-                <a href="cart.html"><ion-icon name = "cart-outline"></ion-icon>Cart (<span id="cart-count">0</span>)</a>
+               <a href="cart.html"> <p>Cart: <span id="cart-count">0</span></p></a>
             </div>
     </nav>
-    <div class="ctn">
-        <div class="products">
-            <div class="product">
-                <img src="" alt="" class="product--img">
-                <h2 class="product--title"></h2>
-                <h4 class="product--category"></h4>
-                <p class="product--description"></p>
-                <div class="product-price-container">
-                    <h3 class="product-price"></h3>
-                    <a href="#!" data-productId="" class="add-to-cart" id="cart"></a>
-                </div>
-               
-            </div>
-        </div>
+
+
+    <div class="container">
+        <p>Cart count: <span id="cart-count">0</span></p>
+        <h1>Products</h1>
+        <div id="products"></div>
     </div>
+
+
     <footer class="pri-bg-col text-center fw-bold d-flex flex-column flex-wrap sticky">
         <section class="media sec-bg-col">
             <div class="socials d-flex gap-3 justify-content-center p-2">
@@ -111,6 +105,7 @@
     </p>
 
 </footer>
+     <script src="script.js"></script>
     <script src="product.js"></script>
 </body>
 </html>

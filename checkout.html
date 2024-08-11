@@ -62,7 +62,7 @@
             <div>
 
                 <i class=" cart fa-solid fa-cart-shopping"></i>
-                <a href="cart.html"><ion-icon name = "cart-outline"></ion-icon>Cart (<span id="cart-count">0</span>)</a>
+                <p>Cart: <span id="cart-count">0</span></p>
             </div>
     </nav>
     <section class="addr">
@@ -566,10 +566,11 @@
             <h1>
                 Order summary
             </h1>
-            <div class="total">
-                <p>Subtotal: $<span id="subtotal">0.00</span></p>
-                <p>Total: $<span id="total">0.00</span></p>
-                <a href="done.html" class="compl" >Order</a>
+            <h1>Cart Items</h1>
+            <p>Cart count: <span id="cart-count">0</span></p>
+            <div id="cart-items"></div>
+        
+            <p>Total Amount: $<span class="total_amount">0</span></p>
                 <a href="product.html">cancel</a>
             </div>
            
@@ -607,6 +608,7 @@
 
 </footer>
     
-
+<script src="cart.js"></script>
+<script src="product.js"></script>
 </body>
 </html>

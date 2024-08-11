@@ -3,36 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- stylesheet -->
-
+    <title>Cart Items</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cart.css">
-
-    <!-- font-awesome -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
- <!-- bootstrap link -->
-
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-  <!-- google font -->
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .cart-item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cart-item h2 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+        .cart-item p {
+            margin: 5px 0;
+        }
+        .cart-controls {
+            display: flex;
+            align-items: center;
+        }
+        .quantity-btn {
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+        .remove-btn {
+            padding: 5px 10px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <div class="icon">
 
             <img src="img/icon.png" alt="" class="logo">
-            <p>e-com</p>
+            <p>shops</p>
         </div>
         <div class="menu">
             <ul>
@@ -59,58 +82,23 @@
             </ul>
         </div>
             <input type="text" placeholder=" &#xF002;  search " style="font-family:Arial, FontAwesome" >
-            <div>
+         <div class="shop">
 
-                <i class=" cart fa-solid fa-cart-shopping"></i>
-                <a href="cart.html"><ion-icon name = "cart-outline"></ion-icon>Cart (<span id="cart-count">0</span>)</a>
-            </div>
+             <i class=" cart fa-solid fa-cart-shopping"></i>
+             <p>Cart: <span id="cart-count">0</span></p>
+         </div>
 
     </nav>
-    <div class="ur--cart">
-        <h1>
-            Your cart
-        </h1>
-        <div class="items">
-            <div class="total">
-                <p>Subtotal: $<span id="subtotal">0.00</span></p>
-                <p>Total: $<span id="total">0.00</span></p>
-                <a href="checkout.html" class="btn" >Go to Checkout</a>
-                <a href="product.html"></a>
-            </div>
-        </div>
-    </div>
-    <footer class="pri-bg-col text-center fw-bold">
-        <section class="media sec-bg-col">
-            <div class="socials d-flex gap-3 justify-content-center p-2">
-                <a href="https://www.instagram.com/?hl=en">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/taofikat-oyedepo-45b772235/">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="https://twitter.com/Taofikat_purity">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://wa.me/+2348139576614">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="https://web.facebook.com/taofikat.oyedepo.7">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://github.com/Taofikatpurity01">
-                    <i class="fa-brands fa-github"></i>
-                    <a href="https://t.me/Taofikat_purity">
-                        <img src="img/telegram.png" target="blank" alt="" class="tel">
-                    </a>
-                </a>
-            </div>
-        </section>
-        <p>
-       © Taofikat|2024
-    </p>
+    <h1>Cart Items</h1>
+    <p>Cart count: <span id="cart-count">0</span></p>
+    <div id="cart-items"></div>
 
-</footer>
+    <p>Total Amount: $<span class="total_amount">0</span></p>
+
+    <a href="checkout.html" style="display: flex; justify-content: center; padding: 20px; border: 1px solid #ccc; border-radius: 5px;background-color: #ccc;width: 20%;margin: auto;"> Checkout</a>
+
     <script src="cart.js"></script>
-    
+    <script src="script.js"></script>
+    <script src="product.js"></script>
 </body>
 </html>

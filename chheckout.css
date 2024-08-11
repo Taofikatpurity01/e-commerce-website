@@ -30,3 +30,42 @@ form input{
     /* width: 90%; */
     margin:30px auto;
 }
+
+
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-item h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+.cart-item p {
+    margin: 5px 0;
+}
+.cart-controls {
+    display: flex;
+    align-items: center;
+}
+.quantity-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.remove-btn {
+    padding: 5px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
