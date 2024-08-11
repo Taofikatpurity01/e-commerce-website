@@ -38,16 +38,16 @@ document.addEventListener('DOMContentLoaded', function() {
   fetchProducts('https://fakestoreapi.com/products');
 });
 
-const addToCart = document.querySelector(".add-to-cart");
-const cartLogo = document.querySelector('#cart-count');
-const urCart = document.querySelector(".ur--cart");
-const list = document.querySelector(".products");
-const listCard = document.querySelector(".product");
-const total = document.querySelector("#total")
+// const addToCart = document.querySelector(".add-to-cart");
+// const cartLogo = document.querySelector('#cart-count');
+// const urCart = document.querySelector(".ur--cart");
+// const list = document.querySelector(".products");
+// const listCard = document.querySelector(".product");
+// const total = document.querySelector("#total");
 
-Function addToCart(key){
+// function addToCart(key){
 
-}
+// };
 
 
 
