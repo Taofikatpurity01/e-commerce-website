@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     for (let i = 0; i < response.length; i++){
         let description = response[i].description;
         let title = response[i].title;
+        // let newproduct = document.createElement
     
      products.innerHTML +=`
         <div class="product">
@@ -48,10 +49,20 @@ document.addEventListener('DOMContentLoaded', function() {
 // function addToCart(key){
 
 // };
+// let iconCart = document.querySelector('.shop-cart');
+// let body = document.querySelector('body');
+// let btn = document.querySelector('.add-to-cart')
 
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function() {
+        let productId = this.getAttribute('data-product-id');
+        addToCart(productId);
+    });
 
-
-
-
-
-
+});
+products.addEventListener('click', (event)=>{
+    let positionClick = event.target;
+    if(positionClick.products.contains('add-to-cart')){
+        alert('1')
+    }
+})

@@ -7,6 +7,9 @@
 .body{
     background-color: wheat;
 }
+.bar{
+    display: none;
+}
 .products{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -25,11 +28,14 @@
     box-shadow: 0 50px 50px #DCE0E1;
     padding: 20px;
     text-align: center;
+    border-radius: 8px;
+    /* background-color: #f4d76551; */
     /* background-color:rgba(128, 128, 128, 0.525); */
 }
 .product img{
     width: 50%;
     justify-self: center;
+    align-self: center;
 }
 .product--title,
 .product-price-container,

@@ -27,6 +27,10 @@ nav{
     display: flex;
     gap: 1rem;
     text-align: center;
+    margin-top: 10px;
+}
+.shop{
+    margin-top: 10px;
 }
 ul{
     display: flex;
@@ -48,11 +52,13 @@ a{
     padding: 10px;
     border-radius: 2px;
 }
-input{
+nav input{
     border-radius: 2rem;
     padding: 5px 30px;
+    height: 30px;
     font-size: 15px;
     border: 1px solid black;
+    margin-top: 20px;
 }
 .search .serc{
     background-color: gray;
@@ -66,10 +72,13 @@ nav i{
     font-size:40px;
     text-align: center;
 }
-.hero img{
+.hero img{ 
     width: 100%;
     height: 70vh;
     overflow: hidden;
+}
+.features h1{
+    margin-top: 30px;
 }
 .products{
     display: grid;
@@ -85,10 +94,11 @@ nav i{
     justify-content: center;
     border: 1px solid #ccc;
     padding: 20px;
-    text-align: center;
+    text-align: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 }
 .product img{
     width: 50%;
+    /* height: 20px; */
     justify-self: center;
 }
 .product--title,
