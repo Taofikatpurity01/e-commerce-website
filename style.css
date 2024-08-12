@@ -152,4 +152,38 @@ footer{
     text-align: right;
 }
 
+@media only screen and (max-width:720px){
+    nav .menu{
+        display: none !important;
+    }
+    nav input{
+        display: none;
+    }
+    nav ul{
+        display: none;
+    }
+    .footer{
+        display: flex ;
+        flex-direction: column;
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+    .care{
+        justify-content: center;
+        text-align: center;
+    }
+    .sub{
+        justify-content: center;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
 

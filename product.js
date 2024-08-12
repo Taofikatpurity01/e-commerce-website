@@ -30,13 +30,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 button.addEventListener('click', function() {
                     const productId = this.getAttribute('data-id');
                     addToCart(productId);
+                    updateCartCount();
                 });
             });
         })
         .catch(error => console.error('Error fetching products:', error));
 });
 
-function addToCart(productId) {
+function addToCart(productId) {w
     fetch('https://fakestoreapi.com/carts', {
         method: 'POST',
         headers: {
@@ -58,6 +59,10 @@ function addToCart(productId) {
         // alert('Product added to cart!');
 
     })
+    cartCount.addEventListener("click", function(){
+        window.location.reload()
+    })
+    
     .catch(error => console.error('Error adding product to cart:', error));
 }
 
